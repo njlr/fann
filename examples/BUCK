@@ -1,0 +1,29 @@
+cxx_binary(
+  name = 'cascade-train',
+  srcs = [
+    'cascade_train.c',
+  ],
+  deps = [
+    '//:fann'
+  ],
+)
+
+cxx_binary(
+  name = 'simple-train',
+  srcs = [
+    'simple_train.c',
+  ],
+  deps = [
+    '//:fann'
+  ],
+)
+
+cxx_binary(
+  name = 'simple-test',
+  srcs = [
+    'simple_test.c',
+  ],
+  deps = [
+    '//:fann'
+  ],
+)

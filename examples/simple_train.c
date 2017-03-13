@@ -34,9 +34,9 @@ int main()
 	fann_set_activation_function_hidden(ann, FANN_SIGMOID_SYMMETRIC);
 	fann_set_activation_function_output(ann, FANN_SIGMOID_SYMMETRIC);
 
-	fann_train_on_file(ann, "xor.data", max_epochs, epochs_between_reports, desired_error);
+	fann_train_on_file(ann, "examples/xor.data", max_epochs, epochs_between_reports, desired_error);
 
-	fann_save(ann, "xor_float.net");
+	fann_save(ann, "examples/xor_float.net");
 
 	fann_destroy(ann);
 

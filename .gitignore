@@ -34,3 +34,8 @@ install_manifest.txt
 *.suo
 *.filters
 *.vcxproj
+/buck-out/
+/.buckd/
+/buckaroo/
+.buckconfig.local
+BUCKAROO_DEPS
